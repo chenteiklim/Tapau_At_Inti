@@ -1,0 +1,79 @@
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>Confirm order</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+
+    <th>Contact_number</th>
+
+    <th>Japanese_food</th>
+
+    <th>Japanese_food_quantity</th>
+
+    <th>Rice_Dishes</th>
+
+    <th>Rice_Dishes_quantity</th>
+
+    <th>Beverage</th>
+
+    <th>Beverage_quantity</th>
+
+    <th>Vegetarian</th>
+
+    <th>Vegetarian_quantity</th>
+
+    <th>order_date</th>
+
+    <th>pick_up_time</th>
+
+    <th>Taking_method</th>
+
+    <th>payment_method</th>
+
+
+  </tr>
+  <tr>
+    <td> {{Name}}</td>
+
+    <td> {{Contact_number}} </td>
+
+    <td> {{Japanese_food}}</td>
+
+    <td> {{Japanese_food_quantity}}</td>
+
+    <td> {{Rice_Dishes}} </td>
+
+    <td> {{Rice_Dishes_quantity}}</td>
+
+    <td> {{Beverage}}</td>
+
+    <td> {{Beverage_quantity}} </td>
+
+    <td> {{Vegetarian}}</td>
+
+    <td> {{Vegetarian_quantity}} </td>
+
+    <td> {{order_date}}</td>
+
+    <td> {{order_time}} </td>
+
+    <td> {{Taking_method}}</td>
+
+    <td> {{payment_method}}</td>
+  </tr>
+ 
+</table>
+<p><a href="order">Confirm Order</a> </p>
+
+</body>
+</html>

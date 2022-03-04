@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+  <p>Comment Table</p>
+</body>
+{% for data in dataset %}.
+
+
+
+
+<table style="width:100%">
+  <tr>
+    <th>Nickname</th>
+
+    <th>Comment</th>
+
+  
+  </tr>
+  <tr>
+    <td> {{data.Nickname}}</td>
+
+    <td> {{data.Comment}} </td>
+
+  </tr>
+ 
+</table>
+{% endfor %}
+ 
+</body>
+</html>

@@ -1,0 +1,32 @@
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>Are you sure want to comment to the public?</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Nickname</th>
+
+    <th>Comment</th>
+
+  </tr>
+  <tr>
+    <td> {{Nickname}}</td>
+
+    <td> {{Comment}} </td>
+
+    
+  </tr>
+ 
+</table>
+<a href="comment"><button type="button">Yes, comment now</button></a>
+
+</body>
+</html>

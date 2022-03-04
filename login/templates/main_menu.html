@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+
+<title>Food ordering System </title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+     content="width=device-width, initial-scale=1.0">
+   
+
+</head>
+
+<body>
+
+  
+    <a href="index/"> <h4>log-out</h4></a>
+  
+    <header>
+      
+        <h1>Tapau at Inti</h1>
+        
+        <h2>Dine in or Take away</h2>
+        
+    </header>
+    <hr>
+
+    <h2>Search Menu</h2>
+<p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+
+<div class="row">
+  <div class="left" style="background-color:#bbb;">
+    <h2>Menu</h2>
+    <h3>Search for category</h3>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li><a href="Japanese_food/">Japanese food</a></li>
+      <li><a href="Beverage/">Beverage</a></li>
+      <li><a href="Rice/">Rice Dishes</a></li>
+      <li><a href="Vegetarian/">Vegeterian</a></li>
+
+    </ul>
+  </div>
+
+  
+  <div class="left" style="background-color:#bbb;">
+    <h2>Recipe</h2>
+    <h3>Search for recipe</h3>
+    <input type="text" id="mySearch2" onkeyup="myFunction2()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu2">
+      <li><a href="recipe">Nasi Lemak recipe</a></li>
+      <li><a href="recipe2">Hainan Chicken rice recipe</a></li>
+    </ul>
+  </div>
+
+
+  
+  
+
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+
+function myFunction2() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch2");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu2");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+
+
+ 
+        
+        
+           
+           
+            
+            
+            <p>Cuisines</p>
+            <div class="label">
+            <p1>Choose anything you like from the Menu</p1>
+          </div>
+        <br><br>
+
+        <div class="row2">
+            <div class=" column">
+              
+              <div class="img-with-text">
+                <a href="Japanese_food/"><img src="https://cdn.tasteatlas.com//Images/Dishes/fde953e5aa504e8c83a84691582b0399.jpg?w=905&h=510 " width="200", height="200"></a>
+                <p>Japanese Food</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="img-with-text">
+                <a href="Rice/"><img src="https://www.seriouseats.com/thmb/t82X6N4ZwGkFZmWPuCjwT-osL3g=/1500x844/smart/filters:no_upscale()/20210714-potato-starch-fried-chicken-vicky-wasik-seriouseats-20-17e193a6bf274bba9091810a0b18ef89.jpg" width="200", height="200"></a>    
+            <p>Rice Dishes</p>
+          </div>
+          
+          </div>
+        
+        
+  <div class="column">
+    <div class="img-with-text">
+      <a href="Beverage/"><img src="https://www.bevsource.com/sites/default/files/styles/taxonomy_pages_large__1000px_wide_/public/images/uploads/products-services/Juices.jpg?itok=vAJQjHUs" width="200", height="200"></a>
+<p>Beverage</p>
+    </div>
+  </div>
+    
+<div class="column">
+  <div class="img-with-text">
+       <a href="Vegetarian/"> <img src="https://www.eatright.org/-/media/eatrightimages/food/nutrition/vegetarianandspecialdiets/vegetarianism-basic-facts-878734076.jpg" width="200", height="200"></a>
+  <p>Vegeterian</p>
+      </div>>
+</div>
+        </div>
+        
+  
+        
+      <div class="row3">
+        <div class="Contact">
+          <br>
+        <br><br><br>
+        
+        
+        <br>
+      <p>Contact us:012-4820649  </p>
+        <p>email: chenteik_99@hotmail.com </p> 
+        </div>
+      </div>
+
+
+    
+       
+      
+    <style>
+      .row1 {
+          box-sizing: border-box;
+        }
+        
+        .column {
+          float: left;
+          width: 20%;
+          padding: 2px;
+        }
+        .row2 {
+          box-sizing: border-box;
+        }
+        
+        .column {
+          float: left;
+          width: 20%;
+          padding: 2px;
+        }
+        
+        .img-with-text {
+    text-align: center;
+    width: [width of img];
+    font-size: 100px;
+}
+
+
+
+
+.img-with-text img {
+    display: block;
+    margin: 0 auto;
+}
+
+h1{
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+h3{
+  text-align: left;
+  font-size: 20px;
+}
+
+h4{
+  text-align: right;
+  font-size: 20px;
+}
+p{
+  font-size: 20px;
+  text-align: center;
+}
+
+.label{
+  font-size: 20px;
+  text-align: center;
+}
+        
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+body {
+  
+  padding: 20px; 
+  width: 1490px;
+  height: 1800px;
+  resize: both;
+  overflow: auto;
+}
+
+.Contact {
+          float: left;
+          width: 100%;
+          padding: 2px;
+        }
+
+    
+
+        </style>
+    
+</body>
+</html>
+
+
+            
